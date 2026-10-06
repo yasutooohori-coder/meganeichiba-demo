@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>眼鏡市場 デモサイト（Service Agent デモ用モックアップ）</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <div class="topbar"><a href="#">オンラインで初めてご注文の方限定 『1,000円OFF』</a></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="logo" href="#" aria-label="眼鏡市場 MEGANE ICHIBA"><img src="images/logo.png" alt="眼鏡市場 MEGANE ICHIBA" width="160" height="182"></a>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="#">メガネ</a></li>
+          <li><a href="#">レンズ</a></li>
+          <li><a href="#">サングラス</a></li>
+          <li><a href="#">スマートグラス</a></li>
+          <li><a href="#">コンタクトレンズ</a></li>
+          <li><a href="#">補聴器</a></li>
+          <li><a href="#">店舗</a></li>
+        </ul>
+      </nav>
+      <ul class="header-icons">
+        <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7"/><path d="M15.5 15.5 21 21"/></svg><span>検索</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-8-4.9-8-11A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5c0 6.1-8 11-8 11Z"/></svg><span>お気に入り</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4.5"/><path d="M4 21c0-4.4 3.6-7.5 8-7.5s8 3.1 8 7.5"/></svg><span>ログイン</span></a></li>
+        <li><a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h3l2.6 12h11.2L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>カート</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="メインビジュアル">
+      <a href="#" class="hero-slide"><img src="images/hero.jpg" alt="見やすっ!! といえば、ストレスフリー遠近 詳しくはこちら" width="2400" height="830"></a>
+      <div class="hero-dots" aria-hidden="true">
+        <span class="is-active"></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <a class="notice-strip" href="#">
+      <span>超薄型レンズも遠近両用レンズも、<strong>眼鏡市場は追加料金0円</strong></span>
+      <span class="circle-arrow" aria-hidden="true"></span>
+    </a>
+
+    <section class="section" aria-labelledby="ranking-title">
+      <div class="section-head"><p class="en">RANKING</p><h2 id="ranking-title">ランキング</h2></div>
+      <div class="seg-tabs" role="tablist" aria-label="ランキング対象">
+        <button type="button" role="tab" aria-selected="true" class="is-active">MENS</button>
+        <button type="button" role="tab" aria-selected="false">WOMENS</button>
+        <button type="button" role="tab" aria-selected="false">KIDS</button>
+      </div>
+      <div class="line-tabs" role="tablist" aria-label="商品カテゴリ">
+        <button type="button" role="tab" aria-selected="true" class="is-active">メガネ</button>
+        <button type="button" role="tab" aria-selected="false">サングラス</button>
+      </div>
+      <div class="rail" data-rail>
+        <ul class="rail-track product-list" id="ranking-list"></ul>
+        <button class="rail-next" type="button" aria-label="次へ"></button>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section section-gray search" aria-labelledby="search-title">
+      <div class="section-head"><h2 id="search-title" class="en-only">SEARCH</h2></div>
+      <div class="pill-tabs" role="tablist" aria-label="検索カテゴリ">
+        <button type="button" role="tab" aria-selected="true" class="is-active">メガネ</button>
+        <button type="button" role="tab" aria-selected="false">サングラス</button>
+      </div>
+      <h3 class="search-sub">形から探す</h3>
+      <ul class="search-grid" id="shape-list"></ul>
+      <h3 class="search-sub">価格から探す</h3>
+      <ul class="search-grid price-grid">
+        <li><a href="#">~14,000円</a></li>
+        <li><a href="#">14,001円~19,000円</a></li>
+        <li><a href="#">19,001円~24,000円</a></li>
+        <li><a href="#">24,001円~</a></li>
+      </ul>
+    </section>
+
+    <section class="section crapt" aria-labelledby="crapt-title">
+      <div class="crapt-inner">
+        <div class="crapt-main">
+          <h2 id="crapt-title">One Mile Eyewear Crapt</h2>
+          <p>オンラインショップでの先行販売期間は終了しました。<br>9/19(土)より、全国の眼鏡市場店舗にて販売いたします。</p>
+          <ul class="crapt-grid" id="crapt-list"></ul>
+          <a class="btn-more btn-left" href="#">Craptの特設サイトを見る</a>
+        </div>
+        <div class="crapt-visual"><img src="images/crapt-banner.jpg" alt="Crapt One Mile Eyewear" width="1300" height="1620"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="feature-title">
+      <div class="section-head"><p class="en">FEATURE</p><h2 id="feature-title">特集</h2></div>
+      <div class="rail" data-rail>
+        <ul class="rail-track banner-list" id="feature-list"></ul>
+        <button class="rail-next" type="button" aria-label="次へ"></button>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section" aria-labelledby="brand-title">
+      <div class="section-head"><p class="en">BRAND</p><h2 id="brand-title">おすすめブランド</h2></div>
+      <div class="line-tabs" role="tablist" aria-label="ブランドカテゴリ">
+        <button type="button" role="tab" aria-selected="true" class="is-active">メガネ</button>
+        <button type="button" role="tab" aria-selected="false">サングラス</button>
+      </div>
+      <div class="rail" data-rail>
+        <ul class="rail-track banner-list brand" id="brand-list"></ul>
+        <button class="rail-next" type="button" aria-label="次へ"></button>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section" aria-labelledby="lens-title">
+      <div class="section-head"><p class="en">LENS</p><h2 id="lens-title">おすすめレンズ</h2></div>
+      <div class="rail" data-rail>
+        <ul class="rail-track lens-list" id="lens-list"></ul>
+        <button class="rail-next" type="button" aria-label="次へ"></button>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section" aria-labelledby="service-title">
+      <div class="section-head"><p class="en">SERVICE&amp;CAMPAIGN</p><h2 id="service-title">サービス・キャンペーン</h2></div>
+      <ul class="service-grid" id="service-list"></ul>
+    </section>
+
+    <section class="section" aria-labelledby="new-title">
+      <div class="section-head"><p class="en">NEW ARRIVALS</p><h2 id="new-title">新着商品</h2></div>
+      <div class="rail" data-rail>
+        <ul class="rail-track product-list" id="new-list"></ul>
+        <button class="rail-next" type="button" aria-label="次へ"></button>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section" aria-labelledby="staff-title">
+      <div class="section-head"><p class="en">STAFF STYLING</p><h2 id="staff-title">スタッフスタイリング</h2></div>
+      <ul class="staff-list" id="staff-list"></ul>
+      <p class="powered">powered by <span>visumo</span></p>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section" aria-labelledby="shop-title">
+      <div class="section-head"><p class="en">SHOP</p><h2 id="shop-title">店舗情報</h2></div>
+      <div class="shop-visual"><img src="images/shop.jpg" alt="眼鏡市場の店舗外観" width="2000" height="603"></div>
+      <div class="shop-buttons">
+        <a class="btn-shop" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>付近の店舗を探す</a>
+        <a class="btn-shop" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 4.5 4h15L21 9.5M3 9.5h18M3 9.5c0 1.5 1.3 2.5 3 2.5s3-1 3-2.5c0 1.5 1.3 2.5 3 2.5s3-1 3-2.5c0 1.5 1.3 2.5 3 2.5s3-1 3-2.5M4.5 12v8h15v-8M9.5 20v-5h5v5"/></svg>店舗検索</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mag-title">
+      <div class="section-head"><p class="en">MEGANE ICHIBA Magazine</p><h2 id="mag-title">眼鏡市場マガジン</h2></div>
+      <ul class="mag-grid" id="mag-list"></ul>
+      <div class="category-box">
+        <h3>category</h3>
+        <ul>
+          <li><a href="#">#メガネの選び方</a></li>
+          <li><a href="#">#サングラスの選び方</a></li>
+          <li><a href="#">#趣味のメガネ選び</a></li>
+          <li><a href="#">#仕事のメガネ選び</a></li>
+          <li><a href="#">#こだわりのメガネ選び</a></li>
+          <li><a href="#">#メンテナンス</a></li>
+          <li><a href="#">#目のトラブル</a></li>
+          <li><a href="#">#お子さまのメガネ選び</a></li>
+        </ul>
+      </div>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section section-gray news" aria-labelledby="news-title">
+      <div class="section-head"><p class="en">NEWS</p><h2 id="news-title">お知らせ</h2></div>
+      <div class="news-tabs" role="tablist" aria-label="お知らせカテゴリ">
+        <button type="button" role="tab" aria-selected="true" class="is-active">ニュース</button>
+        <button type="button" role="tab" aria-selected="false">プレス</button>
+        <button type="button" role="tab" aria-selected="false">オンラインショップ</button>
+        <button type="button" role="tab" aria-selected="false">店舗</button>
+        <button type="button" role="tab" aria-selected="false">コンタクトレンズ</button>
+      </div>
+      <ul class="news-list" id="news-list"></ul>
+      <div class="more"><a class="btn-more" href="#">もっと見る</a></div>
+    </section>
+
+    <section class="section recent" aria-labelledby="recent-title">
+      <div class="section-head"><h2 id="recent-title">最近見た商品</h2></div>
+      <p class="recent-empty">最近見た商品がありません。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#"><img src="images/logo-footer.png" alt="眼鏡市場 MEGANE ICHIBA" width="227" height="254"></a>
+    <div class="footer-cols">
+      <div><h3>商 品</h3><ul><li><a href="#">- メガネ</a></li><li><a href="#">- サングラス</a></li><li><a href="#">- レンズ</a></li><li><a href="#">- コンタクトレンズ</a></li><li><a href="#">- 補聴器</a></li></ul></div>
+      <div><h3>ガイド</h3><ul><li><a href="#">- ご利用ガイド</a></li><li><a href="#">- よくあるご質問</a></li><li><a href="#">- お問い合わせ</a></li><li><a href="#">- メガネの選び方</a></li></ul></div>
+      <div><h3>店 舗</h3><ul><li><a href="#">- 店舗検索</a></li><li><a href="#">- 新店舗情報</a></li></ul></div>
+      <div><h3>会員情報</h3><ul><li><a href="#">- ログイン</a></li></ul></div>
+      <div><h3>コンテンツ</h3><ul><li><a href="#">- 見えるにエール<br>PROJECT</a></li><li><a href="#">- マガジン</a></li><li><a href="#">- KING STAR</a></li></ul></div>
+      <div><h3>多言語対応ページ</h3><ul><li><a href="#">- English</a></li><li><a href="#">- 中文 (簡体)</a></li><li><a href="#">- 中文 (繁體)</a></li><li><a href="#">- 한국어</a></li></ul></div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">運営会社情報</a></li>
+      <li><a href="#">利用規約</a></li>
+      <li><a href="#">特定商取引法に基づく表記</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">サイトマップ</a></li>
+    </ul>
+    <ul class="sns">
+      <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" class="fill"/></svg></a></li>
+      <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><path d="M13.5 22v-8.2h2.8l.4-3.3h-3.2V8.4c0-.9.3-1.6 1.6-1.6h1.7V3.9a23 23 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.3h2.8V22h3.4Z"/></svg></a></li>
+      <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.2l-4.9-6.3L5.4 21H2.3l7.2-8.3L1.9 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg></a></li>
+      <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><path d="M22.5 7.2a2.8 2.8 0 0 0-2-2C18.8 4.8 12 4.8 12 4.8s-6.8 0-8.5.4a2.8 2.8 0 0 0-2 2C1 8.9 1 12 1 12s0 3.1.5 4.8a2.8 2.8 0 0 0 2 2c1.7.4 8.5.4 8.5.4s6.8 0 8.5-.4a2.8 2.8 0 0 0 2-2c.5-1.7.5-4.8.5-4.8s0-3.1-.5-4.8ZM9.8 15.1V8.9l5.7 3.1-5.7 3.1Z"/></svg></a></li>
+    </ul>
+    <p class="copyright">Copyright © MEGANETOP Co., Ltd. All Rights Reserved.</p>
+    <p class="disclaimer">※本ページは Appier BotBonnie / Service Agent の商談デモ用に作成したモックアップです。眼鏡市場（株式会社メガネトップ）の公式サイトではありません。</p>
+  </footer>
+
+  <a class="pagetop" href="#main" aria-label="ページの先頭へ戻る"></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
